@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Webleb</title>
+  <title>hawkiq</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
   <link href="css/styles.css" rel="stylesheet">
-  <script src="/js/main.js"></script>
-<script type="x-shader/x-vertex" id="vertexshader">
+  <script>
+    var nameIn3d = "hawkiq";
+  </script>
+  <script src="js/main.js" defer></script>
+<script type="x-shader/x-vertex" id="vertexshader" defer>
 
   attribute float size;
   attribute vec3 customColor;
@@ -26,7 +29,7 @@
   }
 
 </script>
-<script type="x-shader/x-fragment" id="fragmentshader">
+<script type="x-shader/x-fragment" id="fragmentshader" defer>
 
  uniform vec3 color;
  uniform sampler2D pointTexture;
